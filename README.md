@@ -1,4 +1,4 @@
-# Ondalis Companion 1.1.1
+# Ondalis Companion 1.1.2
 
 Published by **Ondalis**.
 
@@ -15,6 +15,19 @@ PC's own certificate. The only request it makes outside your network is the week
 version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
+
+## What's new in 1.1.2
+
+- **Updates on Linux:** the installer window says when the update is done and closes by itself. Its
+  close button no longer shows empty boxes.
+- **After an update:** a notice tells you the companion was updated, on Windows and Linux.
+- **A calmer look:** the amber glow behind the windows is gone.
+- **Updates on Windows:** a PC that lacks the certificate of GitHub's servers no longer reports the
+  update server as unreachable: Windows checks the certificate and fetches what it misses, as Edge
+  does.
+
+Installing 1.1.2 over 1.1.x keeps the pairing. From 1.1.0 or 1.1.1, choose "Check for updates" in
+the companion's menu or window, then "Update to 1.1.2".
 
 ## What's new in 1.1.1
 
