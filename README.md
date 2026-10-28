@@ -1,4 +1,4 @@
-# Ondalis Companion 1.1.0
+# Ondalis Companion 1.1.1
 
 Published by **Ondalis**.
 
@@ -15,6 +15,16 @@ PC's own certificate. The only request it makes outside your network is the week
 version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
+
+## What's new in 1.1.1
+
+- **Linux:** a new window in the Ondalis look: the PC's state, updates, the pairing code and
+  received files each in their own card.
+- **Updates:** the window's switch now reads "Automatically", and the journal says "up to date" when
+  there is nothing newer.
+
+Installing 1.1.1 over 1.1.0 keeps the pairing. From 1.1.0, choose "Check for updates" in the
+companion's menu or window, then "Update to 1.1.1".
 
 ## What's new in 1.1.0
 
