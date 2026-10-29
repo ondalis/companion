@@ -1,10 +1,10 @@
-# Ondalis Companion 1.1.2
+# Ondalis Companion 1.2.0
 
 Published by **Ondalis**.
 
 Ondalis Companion is the PC helper of the Ondalis apps. With **Ondalis PC Remote**, the phone app
 that turns a phone into a keyboard, mouse, touchpad and media remote for a computer, it lets the app
-list the PC's programmes and open them, receive the files you share from the phone, shut the PC
+list the PC's programmes and open them, receive the files you share from the phone and send files to it, shut the PC
 down, restart it or put it to sleep, and drive its media and volume, on the same Wi-Fi, with
 nothing to type on the PC. It is optional: the phone app works on its own over Bluetooth, with
 nothing installed on the PC.
@@ -16,6 +16,17 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
+## What's new in 1.2.0
+
+- **Send to phone:** send files from the PC to your paired phone, from the "Send to phone" button in
+  the companion's window, from "Send to" > "Phone (Ondalis)" in Windows Explorer, or from the
+  right-click menu of Files (GNOME) and Dolphin (KDE). Photos and videos go to the phone's gallery,
+  documents to Documents, the rest to Downloads; nothing is overwritten. The phone receives while
+  Ondalis PC Remote is open or connected to the PC (Android 10 or later).
+
+Installing 1.2.0 over 1.1.x keeps the pairing. From 1.1.0 or later, choose "Check for updates" in
+the companion's menu or window, then "Update to 1.2.0".
+
 ## What's new in 1.1.2
 
 - **Updates on Linux:** the installer window says when the update is done and closes by itself. Its
@@ -25,9 +36,6 @@ The companion is distributed as compiled programs only.
 - **Updates on Windows:** a PC that lacks the certificate of GitHub's servers no longer reports the
   update server as unreachable: Windows checks the certificate and fetches what it misses, as Edge
   does.
-
-Installing 1.1.2 over 1.1.x keeps the pairing. From 1.1.0 or 1.1.1, choose "Check for updates" in
-the companion's menu or window, then "Update to 1.1.2".
 
 ## What's new in 1.1.1
 
