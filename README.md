@@ -1,4 +1,4 @@
-# Ondalis Companion 1.2.0
+# Ondalis Companion 1.2.1
 
 Published by **Ondalis**.
 
@@ -15,6 +15,17 @@ PC's own certificate. The only request it makes outside your network is the week
 version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
+
+## What's new in 1.2.1
+
+- **Send to phone:** a finished share no longer leaves its progress line in the window. A phone on
+  Android 9 is named at once, in the window and in the icon's menu, as one that cannot receive files.
+  The waiting line says what the phone needs: the same Wi-Fi, no VPN in the way.
+- **Windows:** Explorer's "Send to" entry is named in the installer's language ("Téléphone
+  (Ondalis)" in French); updating from 1.2.0 replaces the English one.
+
+Installing 1.2.1 over 1.1.x or 1.2.0 keeps the pairing. From 1.1.0 or later, choose "Check for
+updates" in the companion's menu or window, then "Update to 1.2.1".
 
 ## What's new in 1.2.0
 
