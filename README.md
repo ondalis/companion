@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.0
+# Ondalis Companion 1.3.1
 
 Published by **Ondalis**.
 
@@ -18,6 +18,16 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
+## What's new in 1.3.1
+
+- **Windows:** the image library the companion's icon uses, Pillow, moves to 13.0.0, which fixes
+  the 59 security advisories published against the version 1.3.0 carried.
+- **Ondalis Share:** a file being received is no longer ended as idle while the PC is still writing
+  bytes that had already arrived.
+
+Installing 1.3.1 over 1.3.0 keeps the pairing. In 1.3.0, choose "Check for updates" in the
+companion's menu or window, then "Update to 1.3.1".
+
 ## What's new in 1.3.0
 
 - **Ondalis Share:** the PC sends files to the Ondalis Share devices on your network and receives
@@ -35,71 +45,6 @@ The companion is distributed as compiled programs only.
 - **Privacy:** only the paired phone learns the PC's network name, and the pairing code is no longer
   written to the system's log.
 - **Updates:** an update waits for the files being sent or received.
-
-Installing 1.3.0 over 1.1.x or 1.2.x keeps the pairing. From 1.1.0 or later, choose "Check for
-updates" in the companion's menu or window, then "Update to 1.3.0".
-
-## What's new in 1.2.1
-
-- **Send to phone:** a finished share no longer leaves its progress line in the window. A phone on
-  Android 9 is named at once, in the window and in the icon's menu, as one that cannot receive files.
-  The waiting line says what the phone needs: the same Wi-Fi, no VPN in the way.
-- **Windows:** Explorer's "Send to" entry is named in the installer's language ("Téléphone
-  (Ondalis)" in French); updating from 1.2.0 replaces the English one.
-
-Installing 1.2.1 over 1.1.x or 1.2.0 keeps the pairing. From 1.1.0 or later, choose "Check for
-updates" in the companion's menu or window, then "Update to 1.2.1".
-
-## What's new in 1.2.0
-
-- **Send to phone:** send files from the PC to your paired phone, from the "Send to phone" button in
-  the companion's window, from "Send to" > "Phone (Ondalis)" in Windows Explorer, or from the
-  right-click menu of Files (GNOME) and Dolphin (KDE). Photos and videos go to the phone's gallery,
-  documents to Documents, the rest to Downloads; nothing is overwritten. The phone receives while
-  Ondalis PC Remote is open or connected to the PC (Android 10 or later).
-
-Installing 1.2.0 over 1.1.x keeps the pairing. From 1.1.0 or later, choose "Check for updates" in
-the companion's menu or window, then "Update to 1.2.0".
-
-## What's new in 1.1.2
-
-- **Updates on Linux:** the installer window says when the update is done and closes by itself. Its
-  close button no longer shows empty boxes.
-- **After an update:** a notice tells you the companion was updated, on Windows and Linux.
-- **A calmer look:** the amber glow behind the windows is gone.
-- **Updates on Windows:** a PC that lacks the certificate of GitHub's servers no longer reports the
-  update server as unreachable: Windows checks the certificate and fetches what it misses, as Edge
-  does.
-
-## What's new in 1.1.1
-
-- **Linux:** a new window in the Ondalis look: the PC's state, updates, the pairing code and
-  received files each in their own card.
-- **Updates:** the window's switch now reads "Automatically", and the journal says "up to date" when
-  there is nothing newer.
-
-Installing 1.1.1 over 1.1.0 keeps the pairing. From 1.1.0, choose "Check for updates" in the
-companion's menu or window, then "Update to 1.1.1".
-
-## What's new in 1.1.0
-
-- **Send to PC:** files you share from the phone land in your Downloads folder. The companion shows
-  their progress and the time left, and tells you when they are in, with a button to open the
-  folder.
-- **Power:** shut down, restart or put the PC to sleep from the phone, now or at a time you choose,
-  and turn its screens off. An app with unsaved work keeps the PC on.
-- **Media and sound:** the phone drives the PC's players, its volume and its microphone.
-- **More from the phone:** open a web address or a settings page on the PC, and put a text in its
-  clipboard.
-- **Updates:** the companion checks for a new version once a week (you can turn it off) and updates
-  in one click. Each update is signed and checked before it runs.
-- **Pairing:** the code shown on the PC is never sent over the network.
-- **A new look:** the window and the installers in the Ondalis design, light and dark.
-- **Windows:** an Allow button when the firewall blocked the companion, and no console window.
-- **Linux:** the applications menu opens the companion's window, paired or not, and shows the new
-  icon after an update.
-
-Installing 1.1.0 over 1.0.x keeps the pairing.
 
 ## Files
 
