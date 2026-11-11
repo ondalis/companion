@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.1
+# Ondalis Companion 1.3.2
 
 Published by **Ondalis**.
 
@@ -18,42 +18,27 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
-## What's new in 1.3.1
+## What's new in 1.3.2
 
-- **Windows:** the image library the companion's icon uses, Pillow, moves to 13.0.0, which fixes
-  the 59 security advisories published against the version 1.3.0 carried.
-- **Ondalis Share:** a file being received is no longer ended as idle while the PC is still writing
-  bytes that had already arrived.
+**Fixed**
+- Linux: the companion now starts on Fedora 45 and Debian 13, where 1.3.0 and 1.3.1 did not.
+- Linux: the companion no longer stops on systems that cannot display its icons; it opens without them.
 
-Installing 1.3.1 over 1.3.0 keeps the pairing. In 1.3.0, choose "Check for updates" in the
-companion's menu or window, then "Update to 1.3.1".
+**Improved**
+- Linux: the download is about half the size (9.2 MB instead of 17.6 MB).
 
-## What's new in 1.3.0
-
-- **Ondalis Share:** the PC sends files to the Ondalis Share devices on your network and receives
-  theirs. Use "Send files" in the companion's window (or drop files on it), or "Send to" and the
-  right-click menu, as for the phone. A share sent to the PC asks first: Accept, Refuse, or Refuse
-  and block, with the same code on both screens. "Can send to me" sets who may send: Whole network,
-  Accepted devices or Nobody.
-- **This PC's name:** set it in the window. By default it no longer shows your first name or your
-  login.
-- **A new window:** the PC's name at the top, Send files below it, updates as a banner. Text at the
-  highest contrast level (AAA), larger buttons; on Linux the text follows the desktop's text size.
-  On a small screen the window scrolls.
-- **Pairing:** choose "Pair a phone" in the window to show the code. While no phone is paired, PC
-  Remote's side answers nobody on the network.
-- **Privacy:** only the paired phone learns the PC's network name, and the pairing code is no longer
-  written to the system's log.
-- **Updates:** an update waits for the files being sent or received.
+**Before you update**
+- Updating keeps your phone paired.
+- If 1.3.0 or 1.3.1 does not start on your Linux system, it cannot update itself: download the Linux file from ondalis.pages.dev/pc and open "Install Ondalis Companion". It installs over the old version and keeps your phone paired.
 
 ## Files
 
 - `ondalis-companion-setup.exe` — Windows 10 and 11, 64-bit.
-- `ondalis-companion-linux.tar.gz` — Linux, x86-64, GTK desktops such as GNOME, whose system Python
-  is 3.10, 3.11, 3.12, 3.13 or 3.14.
+- `ondalis-companion-linux.tar.gz` — Linux, 64-bit, GTK desktops such as
+  GNOME: Ubuntu 22.04 or later, Debian 12 or later, Fedora 44 or later.
 - `SHA256SUMS` — the checksums of the files above.
-- `update.json` and `update.json.sig` — this release's description and its signature, which the
-  companion reads to update itself.
+- `update.json` and `update.json.sig` — what the companion reads to
+  update itself.
 
 macOS is not supported yet.
 
@@ -126,5 +111,5 @@ On Windows, the installer shows which libraries are under the GNU LGPL (pystray,
 replace them, and installs that notice (`LGPL-NOTICE.txt`) with `THIRD-PARTY-NOTICES.txt`, which
 lists every component inside. On Linux, `THIRD-PARTY-NOTICES.txt` in the archive lists the
 components it carries (cryptography, cffi, typing-extensions, ifaddr, unmodified, with their own licence
-files in `deps/`), the terms of the Nuitka runtime inside the compiled modules, and the window's
-typeface, Manrope, under the SIL Open Font License.
+files in `deps/`), the compiler of its modules, Cython, whose output carries no licence condition, and
+the window's typeface, Manrope, under the SIL Open Font License.
