@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.2
+# Ondalis Companion 1.3.3
 
 Published by **Ondalis**.
 
@@ -18,18 +18,14 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
-## What's new in 1.3.2
+## What's new in 1.3.3
 
 **Fixed**
-- Linux: the companion now starts on Fedora 45 and Debian 13, where 1.3.0 and 1.3.1 did not.
-- Linux: the companion no longer stops on systems that cannot display its icons; it opens without them.
-
-**Improved**
-- Linux: the download is about half the size (9.2 MB instead of 17.6 MB).
+- Windows: when the Windows firewall blocks the companion, its window now says so and lets you allow it. Before, nothing was shown.
+- Windows: after your PC changes network, the companion can be found there again within seconds, without restarting it. Before, it sometimes stayed unreachable until restarted.
 
 **Before you update**
 - Updating keeps your phone paired.
-- If 1.3.0 or 1.3.1 does not start on your Linux system, it cannot update itself: download the Linux file from ondalis.pages.dev/pc and open "Install Ondalis Companion". It installs over the old version and keeps your phone paired.
 
 ## Files
 
