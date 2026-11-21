@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.3
+# Ondalis Companion 1.3.4
 
 Published by **Ondalis**.
 
@@ -18,11 +18,21 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
-## What's new in 1.3.3
+## What's new in 1.3.4
+
+**New**
+- Linux: the companion now comes as a package for your system too: .deb (Ubuntu, Debian), .rpm (Fedora, openSUSE) and an Arch package. It still updates by itself.
+- Linux on ARM (aarch64) is supported.
+- Linux: when your firewall blocks the companion, its window says so and lets you allow it. Uninstalling the companion puts the firewall back as it was.
+- Windows: when the companion takes a while to start, a small window shows that it is starting.
+- The "Can send to me" choice has a clearer look.
 
 **Fixed**
-- Windows: when the Windows firewall blocks the companion, its window now says so and lets you allow it. Before, nothing was shown.
-- Windows: after your PC changes network, the companion can be found there again within seconds, without restarting it. Before, it sometimes stayed unreachable until restarted.
+- An update that cannot start now puts the previous version back by itself.
+- Windows: an update interrupted half-way repairs itself the next time you sign in.
+- Linux: the window stays inside the screen on GNOME and on Pop!_OS, where the tray icon now shows too.
+- Send files: two devices with the same name can be told apart, and a long name is shown whole.
+- Send files over Bluetooth: receiving works again after Bluetooth was switched off and on.
 
 **Before you update**
 - Updating keeps your phone paired.
@@ -30,8 +40,13 @@ The companion is distributed as compiled programs only.
 ## Files
 
 - `ondalis-companion-setup.exe` — Windows 10 and 11, 64-bit.
-- `ondalis-companion-linux.tar.gz` — Linux, 64-bit, GTK desktops such as
-  GNOME: Ubuntu 22.04 or later, Debian 12 or later, Fedora 44 or later.
+- `ondalis-companion-x86_64.deb` — Ubuntu, Debian, Linux Mint, Pop!_OS (Intel or AMD).
+- `ondalis-companion-x86_64.rpm` — Fedora, openSUSE (Intel or AMD).
+- `ondalis-companion-x86_64.pkg.tar.zst` — Arch, Manjaro, EndeavourOS, CachyOS (Intel or AMD).
+- `ondalis-companion-linux.tar.gz` — another Linux (Intel or AMD), GTK desktops such as GNOME; it
+  installs for your user only.
+- `ondalis-companion-aarch64.deb`, `ondalis-companion-aarch64.rpm` and
+  `ondalis-companion-linux-aarch64.tar.gz` — the same for Linux on ARM (aarch64).
 - `SHA256SUMS` — the checksums of the files above.
 - `update.json` and `update.json.sig` — what the companion reads to
   update itself.
@@ -62,15 +77,27 @@ again.
 
 ## Install on Linux
 
-Extract the archive, then double-click "Install Ondalis Companion" in the extracted folder, or run:
+With a package (`.deb`, `.rpm`): open the downloaded file and start the installation. If the system
+warns about a third-party package, carry on, then type the computer's password. On Arch, Manjaro,
+EndeavourOS and CachyOS, in a terminal, in the downloaded file's folder:
+
+```sh
+sudo pacman -U ondalis-companion-x86_64.pkg.tar.zst
+```
+
+Then open "Ondalis Companion" from your applications. A companion installed from a package asks for
+the computer's password when it updates itself and when you uninstall it from its window.
+
+With the archive: extract it, then double-click "Install Ondalis Companion" in the extracted folder,
+or run:
 
 ```sh
 tar xzf ondalis-companion-linux.tar.gz
 ./ondalis-companion/files/install.sh
 ```
 
-No administrator rights and no download are needed: everything the companion uses comes in the
-archive or with the desktop. The installer:
+With the archive, no administrator rights and no download are needed: everything the companion
+uses comes in the archive or with the desktop. Its installer:
 
 - installs the companion for your user only, under `~/.local/share/ondalis-companion`;
 - lets the companion start by itself when your phone needs it, and stop when it is no longer used;
@@ -108,4 +135,5 @@ replace them, and installs that notice (`LGPL-NOTICE.txt`) with `THIRD-PARTY-NOT
 lists every component inside. On Linux, `THIRD-PARTY-NOTICES.txt` in the archive lists the
 components it carries (cryptography, cffi, typing-extensions, ifaddr, unmodified, with their own licence
 files in `deps/`), the compiler of its modules, Cython, whose output carries no licence condition, and
-the window's typeface, Manrope, under the SIL Open Font License.
+the window's typeface, Manrope, under the SIL Open Font License. The packages carry their own
+`THIRD-PARTY-NOTICES.txt`.
