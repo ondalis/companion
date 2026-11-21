@@ -28,7 +28,7 @@ The companion is distributed as compiled programs only.
 - The "Can send to me" choice has a clearer look.
 
 **Fixed**
-- An update that cannot start now puts the previous version back by itself.
+- Linux: an update that cannot start now puts the previous version back by itself.
 - Windows: an update interrupted half-way repairs itself the next time you sign in.
 - Linux: the window stays inside the screen on GNOME and on Pop!_OS, where the tray icon now shows too.
 - Send files: two devices with the same name can be told apart, and a long name is shown whole.
