@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.4
+# Ondalis Companion 1.3.5
 
 Published by **Ondalis**.
 
@@ -18,21 +18,11 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
-## What's new in 1.3.4
-
-**New**
-- Linux: the companion now comes as a package for your system too: .deb (Ubuntu, Debian), .rpm (Fedora, openSUSE) and an Arch package. It still updates by itself.
-- Linux on ARM (aarch64) is supported.
-- Linux: when your firewall blocks the companion, its window says so and lets you allow it. Uninstalling the companion puts the firewall back as it was.
-- Windows: when the companion takes a while to start, a small window shows that it is starting.
-- The "Can send to me" choice has a clearer look.
+## What's new in 1.3.5
 
 **Fixed**
-- Linux: an update that cannot start now puts the previous version back by itself.
-- Windows: an update interrupted half-way repairs itself the next time you sign in.
-- Linux: the window stays inside the screen on GNOME and on Pop!_OS, where the tray icon now shows too.
-- Send files: two devices with the same name can be told apart, and a long name is shown whole.
-- Send files over Bluetooth: receiving works again after Bluetooth was switched off and on.
+- Windows: an update now takes a few seconds instead of about half a minute.
+- Windows: the companion still starts after a power cut just after an install or an update.
 
 **Before you update**
 - Updating keeps your phone paired.
