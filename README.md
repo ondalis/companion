@@ -1,4 +1,4 @@
-# Ondalis Companion 1.3.5
+# Ondalis Companion 1.3.6
 
 Published by **Ondalis**.
 
@@ -18,11 +18,13 @@ version described below, which you can turn off.
 
 The companion is distributed as compiled programs only.
 
-## What's new in 1.3.5
+## What's new in 1.3.6
 
 **Fixed**
-- Windows: an update now takes a few seconds instead of about half a minute.
-- Windows: the companion still starts after a power cut just after an install or an update.
+- After an update, the companion's window is back as you left it: open if it was open, closed if it was closed. On Linux, this works from the next update on.
+
+**Improved**
+- Linux: the window is laid out properly when your system uses a large text size.
 
 **Before you update**
 - Updating keeps your phone paired.
